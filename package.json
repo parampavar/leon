@@ -4,7 +4,7 @@
   "description": "Server, skills and web app of the Leon personal assistant",
   "author": {
     "name": "Louis Grenard",
-    "email": "louis.grenard@gmail.com",
+    "email": "louis@getleon.ai",
     "url": "https://twitter.com/grenlouis"
   },
   "license": "MIT",
@@ -51,10 +51,10 @@
     "train": "babel-node scripts/train/run-train.js",
     "prepare-release": "babel-node scripts/release/prepare-release.js",
     "check": "babel-node scripts/run-check.js",
-    "docker:build": "docker build -t leonai/leon .",
-    "docker:run": "docker-compose up",
-    "docker:dev": "docker-compose --file=docker-compose.dev.yml up",
-    "docker:check": "docker run --rm --interactive leonai/leon npm run check"
+    "docker:build": "docker build -t leon-ai/leon .",
+    "docker:run": "docker compose up",
+    "docker:dev": "docker compose --file=docker-compose.dev.yml up",
+    "docker:check": "docker run --rm --interactive leon-ai/leon npm run check"
   },
   "dependencies": {
     "@aws-sdk/client-polly": "^3.18.0",
@@ -96,7 +96,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-import-resolver-babel-module": "^5.3.1",
     "eslint-plugin-import": "^2.23.2",
-    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jest": "^26.8.7",
     "git-changelog": "^2.0.0",
     "husky": "^7.0.0",
     "inquirer": "^8.1.0",
